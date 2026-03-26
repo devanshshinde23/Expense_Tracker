@@ -37,10 +37,7 @@ public class UserDao implements UserService {
 	@Override
 	public void saveuserdata(Users u1) {
 		
-//		String eencodePassword = passwordencoder.encode(u1.getPassword());
-//		
-//		u1.setPassword(eencodePassword);
-//		ur.save(u1);
+
 		
 		u1.setPassword(passwordencoder.encode(u1.getPassword()));
 	    ur.save(u1);
